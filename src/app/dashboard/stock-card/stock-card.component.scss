@@ -1,0 +1,71 @@
+.stock-card-container {
+  width           : 342px;
+  height          : 222px;
+  background-color: var(--secondary-color);
+  padding         : 1rem;
+  border-radius   : 4px;
+  border-left     : 1px var(--positive-variation-color) solid;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1)
+}
+
+.stock-card-container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.negative-border-variation{
+  border-left-color: var(--negative-variation-color);
+}
+
+.stock-card-header {
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : baseline;
+}
+
+.stock-card-header h2,
+p {
+  margin: 0;
+}
+
+.stock-card-header h2 {
+  color: var(--text-color);
+}
+
+.stock-card-header small {
+  font-weight: 500;
+  color      : var(--text-color-light);
+}
+
+.stock-card-body {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  margin         : auto;
+}
+
+.stock-card-body .value {
+  font-size: 3rem;
+  color    : var(--text-color);
+}
+
+.stock-card-body .variation {
+  background-color: var(--positive-variation-color);
+  color           : var(--secondary-color);
+  padding         : 0.25rem 0.5rem;
+  border-radius   : 4px;
+  align-self      : flex-end;
+  margin-top      : 0.25rem;
+  font-size       : 0.85rem;
+}
+
+negative-variation{
+  background-color: var(--negative-variation-color);
+}

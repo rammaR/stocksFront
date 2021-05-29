@@ -1,0 +1,7 @@
+.page-container {
+  padding              : 1.5rem;
+  width                : 100%;
+  display              : grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap             : 10px;
+}
